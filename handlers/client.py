@@ -27,10 +27,10 @@ async def send_cekrets_command(message: types.Message):
 async def invitation(message: types.Message):
     await bot.send_message(message.from_user.id, "https://t.me/+itMNDkjlKj1iZTdi")
     
-async def abc1(message: types.Message):
+async def question_one(message: types.Message):
     await message.reply("Хороший вопрос...")
     
-async def abc2(message: types.Message):
+async def question_two(message: types.Message):
     await message.reply("У нас есть слова, которые не прошли цензуру: Путин, Z, Ян, Аниме. Список будет пополняться))")
 
 
@@ -39,5 +39,5 @@ def register_handlers_client(dp : Dispatcher):
     dp.register_message_handler(process_start_command, commands=['start'])
     dp.register_message_handler(send_cekrets_command, lambda message: "Секретик" in message.text)
     dp.register_message_handler(invitation, lambda message: "Да, конечно, 100%" in message.text)
-    dp.register_message_handler(abc1, lambda message: "Как дела?" in message.text) 
-    dp.register_message_handler(abc2, lambda message: "Какая цензура?" in message.text) 
+    dp.register_message_handler(question_one, lambda message: "Как дела?" in message.text) 
+    dp.register_message_handler(question_two, lambda message: "Какая цензура?" in message.text) 
