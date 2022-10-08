@@ -27,7 +27,7 @@ async def send_cekrets_command(message: types.Message):
 async def invitation(message: types.Message):
     await bot.send_message(message.from_user.id, "https://t.me/+itMNDkjlKj1iZTdi")
     
-async def ABC_1(message: types.Message):
+async def ABC1(message: types.Message):
     await message.reply("Хороший вопрос...")
 
 
@@ -36,5 +36,5 @@ def register_handlers_client(dp : Dispatcher):
     dp.register_message_handler(process_start_command, commands=['start'])
     dp.register_message_handler(send_cekrets_command, lambda message: "Секретик" in message.text)
     dp.register_message_handler(invitation, lambda message: "Да, конечно, 100%" in message.text)
-    dp.register_message_handler(ABC_1, lambda message: "Бот, как дела?" in message.text) 
- 
+    dp.register_message_handler(ABC1, lambda message: "Бот, как дела?" in message.text) 
+  
