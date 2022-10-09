@@ -28,10 +28,10 @@ async def invitation(message: types.Message):
     await bot.send_message(message.from_user.id, "https://t.me/+itMNDkjlKj1iZTdi")
     
 async def question_one(message: types.Message):
-    await message.reply("Хороший вопрос...")
+    await message.answer("Хороший вопрос...")
     
 async def question_two(message: types.Message):
-    await message.reply("У нас есть слова, которые не прошли цензуру: Путин, Z, Ян, Аниме. Список будет пополняться))")
+    await message.answer("У нас есть слова, которые не прошли цензуру: Путин, Z, Ян, Аниме. Список будет пополняться))")
 
 
 def register_handlers_client(dp : Dispatcher):
