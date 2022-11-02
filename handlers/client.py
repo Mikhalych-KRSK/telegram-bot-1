@@ -52,5 +52,5 @@ def register_handlers_client(dp : Dispatcher):
     dp.register_message_handler(send_cekrets_command_two, lambda message: "Загадка" in message.text)
     dp.register_message_handler(invitation, lambda message: "Да, конечно, 100%" in message.text)
     dp.register_message_handler(question_one, lambda message: "Бот, как дела?" in message.text) 
-    dp.register_message_handler(question_two, lambda message: "Какая цензура?" in message.text) 
+    dp.register_message_handler(question_two, lambda message: "Бот, какая цензура?" in message.text) 
     dp.register_message_handler(question_three, lambda message: "?" in message.text)
